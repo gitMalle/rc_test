@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { SearchWidget } from "./components/SearchWidget";
 
 const App = () => (
