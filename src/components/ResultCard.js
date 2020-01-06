@@ -22,9 +22,13 @@ export const ResultCard = props => {
 
   return (
     <div className="result-card">
-      <div className="pill-cell">
-        <div className={`pill pill-${result.placeType}`}>{getType(result)}</div>
-      </div>
+      {result.placeType && (
+        <div className="pill-cell">
+          <div className={`pill pill-${result.placeType}`}>
+            {getType(result)}
+          </div>
+        </div>
+      )}
 
       <div className="text-cell">
         <span className="result-header">{result.name}</span>
