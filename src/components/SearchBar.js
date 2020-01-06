@@ -10,6 +10,8 @@ export const SearchBar = props => {
   useEffect(() => {
     if (searchText.length > 1) {
         fetchResults();
+    } else {
+        setResults([]);
     }
   }, [searchText]);
 
