@@ -1,0 +1,12 @@
+.widget-container {
+    background-color: #F3CF55;
+    width: 100%;
+    max-width: 500px;
+    padding: 24px;
+    color: #333333;
+    font-weight: lighter;
+}
+
+.widget-container > h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
