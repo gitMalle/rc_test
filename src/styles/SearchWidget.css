@@ -5,8 +5,10 @@
     padding: 24px;
     color: #333333;
     font-weight: lighter;
+    font-size: 14px;
 }
 
-.widget-container > h3 {
+.widget-container > h4 {
     font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
