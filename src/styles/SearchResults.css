@@ -1,0 +1,69 @@
+.results-wrapper {
+    position: absolute;
+    display: table;
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.result-card {
+    display: table-row;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 100%;
+}
+
+.result-card:hover {
+    background-color: #e7f4fe;
+}
+
+.pill-cell {
+    display: table-cell;
+    padding: 8px 16px;
+    width: 1px;
+}
+
+.text-cell {
+    display: table-cell;
+    padding: 8px 16px 8px 0;
+}
+
+.result-header {
+    font-size: 14px;
+}
+
+.pill {
+    min-width: 60px;
+    padding: 1px 4px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+}
+
+.pill-A {
+    background-color: rgb(150, 20, 18);
+}
+
+.pill-T {
+    background-color: rgb(91, 91, 91);
+}
+
+.pill-C {
+    background-color: rgb(10, 99, 176);
+}
+
+.pill-F {
+    background-color: rgb(241, 199, 76);
+    color: rgb(34, 34, 34);
+}
+
+.pill-P {
+    background-color: rgb(241, 199, 76);
+    color: rgb(34, 34, 34);
+}
+
+.pill-Z {
+    background-color: rgb(255, 154, 2);
+    color: rgb(34, 34, 34);
+}
