@@ -6,7 +6,7 @@ export const SearchResults = props => {
     const { results } = props;
     
     return (
-        <div className="results-wrapper">
+        <div className="results-wrapper" data-testid="results">
             {results.map(result => (
                 <ResultCard key={result.bookingId} result={result} />
             ))}

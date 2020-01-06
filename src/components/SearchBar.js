@@ -8,7 +8,7 @@ export const SearchBar = props => {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    if (searchText.length > 1) {
+    if (searchText.trim().length > 1) {
       fetchResults();
     } else {
       setResults([]);
@@ -24,17 +24,20 @@ export const SearchBar = props => {
 
   return (
     <div className="position-relative">
-      <form>
-        <input
-          type="search"
-          className="form-control search-bar"
-          placeholder="city, airport, station, region and district..."
-          value={searchText}
-          onChange={ev => setSearchText(ev.target.value)}
-          autoFocus
-        />
-      </form>
-      {results.length > 0 && <SearchResults results={results} />}
+      <div className="form-group mt-4">
+        <form>
+          <label>Pick-up location</label>
+          <input
+            type="search"
+            className="form-control search-bar"
+            placeholder="city, airport, station, region and district..."
+            value={searchText}
+            onChange={ev => setSearchText(ev.target.value)}
+            autoFocus
+          />
+        </form>
+        {results.length > 0 && <SearchResults results={results} />}
+      </div>
     </div>
   );
 };
